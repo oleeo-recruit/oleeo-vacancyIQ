@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en-GB" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Oleeo VacancyIQ is an AI-powered vacancy content and job description generator for creating on-brand, bias-aware recruitment content faster." />
+  <meta property="og:title" content="Oleeo VacancyIQ | Vacancy Content and Job Description Generator" />
+  <meta property="og:description" content="Create clearer, more consistent and more inclusive vacancy content with Oleeo VacancyIQ." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/oleeo-logo.png" />
+  <title>Oleeo VacancyIQ | Vacancy Content and Job Description Generator</title>
+  <link rel="icon" href="assets/oleeo-logo.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            oleeo: {
+              ink: '#070B2E',
+              navy: '#101844',
+              night: '#050718',
+              coral: '#FF3E5F',
+              flame: '#FF734A',
+              rose: '#FFE7EC',
+              blush: '#FFF6F7',
+              violet: '#7867FF',
+              sky: '#58D7FF',
+              mint: '#DDF9EF',
+              mist: '#F6F7FB',
+              line: '#E8EAF3'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 60px rgba(7, 11, 46, 0.12)',
+            lift: '0 24px 90px rgba(255, 62, 95, 0.22)',
+            glow: '0 0 50px rgba(255, 62, 95, 0.24)'
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.75rem'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-white font-sans text-oleeo-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-oleeo-night/86 text-white backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Primary navigation">
+      <a class="group flex items-center gap-3" href="#top" aria-label="Oleeo VacancyIQ home">
+        <img class="h-11 w-11 rounded-full shadow-glow transition duration-300 group-hover:scale-105" src="assets/oleeo-logo.png" alt="Oleeo logo" />
+        <div class="leading-none">
+          <div class="text-xl font-black tracking-tight">Oleeo</div>
+          <div class="mt-1 text-[0.65rem] font-black uppercase tracking-[0.28em] text-white/60">VacancyIQ</div>
+        </div>
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-bold text-white/76 lg:flex">
+        <a class="transition hover:text-white" href="#why">Why VacancyIQ</a>
+        <a class="transition hover:text-white" href="#how-it-works">How it works</a>
+        <a class="transition hover:text-white" href="#outcomes">Outcomes</a>
+        <a class="transition hover:text-white" href="#proof">Proof</a>
+        <a class="transition hover:text-white" href="#faq">FAQ</a>
+      </div>
+
+      <div class="hidden items-center gap-3 lg:flex">
+        <a href="#demo" class="rounded-full border border-white/18 px-5 py-2.5 text-sm font-extrabold text-white transition hover:border-white/40 hover:bg-white/10">Watch demo</a>
+        <a data-demo-link href="#" class="rounded-full bg-white px-5 py-2.5 text-sm font-black text-oleeo-ink shadow-glow transition hover:-translate-y-0.5 hover:bg-oleeo-rose">Book a demo</a>
+      </div>
+
+      <button data-mobile-menu-button class="inline-flex items-center justify-center rounded-full border border-white/15 p-2.5 text-white lg:hidden" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" /></svg>
+      </button>
+    </nav>
+
+    <div data-mobile-menu class="hidden border-t border-white/10 bg-oleeo-night px-5 py-4 lg:hidden">
+      <div class="grid gap-4 text-sm font-bold text-white/86">
+        <a href="#why">Why VacancyIQ</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#proof">Proof</a>
+        <a href="#faq">FAQ</a>
+        <a data-demo-link href="#" class="rounded-full bg-white px-5 py-3 text-center font-black text-oleeo-ink">Book a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="relative isolate overflow-hidden bg-oleeo-night pt-32 text-white sm:pt-36 lg:pt-40">
+      <div class="hero-mesh absolute inset-0 opacity-95"></div>
+      <div class="bubble bubble-one"></div>
+      <div class="bubble bubble-two"></div>
+      <div class="bubble bubble-three"></div>
+
+      <div class="relative mx-auto grid max-w-7xl gap-12 px-5 pb-20 lg:grid-cols-[1.02fr_.98fr] lg:items-center lg:px-8 lg:pb-28">
+        <div class="reveal max-w-3xl">
+          <p class="mb-6 inline-flex items-center gap-3 rounded-full border border-white/12 bg-white/8 px-4 py-2 text-sm font-extrabold text-white/78 backdrop-blur">
+            <span class="h-2.5 w-2.5 rounded-full bg-gradient-to-br from-oleeo-coral to-oleeo-flame"></span>
+            AI vacancy content generator for modern hiring teams
+          </p>
+          <h1 class="max-w-4xl text-5xl font-black tracking-[-0.06em] sm:text-6xl lg:text-[5.25rem] lg:leading-[0.92]">
+            Create job adverts people actually want to apply for.
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-white/74 sm:text-xl">
+            Oleeo VacancyIQ helps talent teams generate clearer, more consistent and more inclusive vacancy content — trained around the language, roles and hiring reality of your organisation.
+          </p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a data-demo-link href="#" class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-oleeo-coral to-oleeo-flame px-7 py-4 text-base font-black text-white shadow-lift transition hover:-translate-y-0.5 hover:shadow-glow">Book a demo</a>
+            <a href="#why" class="inline-flex items-center justify-center rounded-full border border-white/18 px-7 py-4 text-base font-extrabold text-white transition hover:border-white/40 hover:bg-white/10">Explore VacancyIQ →</a>
+          </div>
+
+          <dl class="mt-10 grid max-w-2xl grid-cols-3 gap-3 text-white">
+            <div class="rounded-3xl border border-white/10 bg-white/8 p-4 backdrop-blur">
+              <dt class="text-xs font-black uppercase tracking-[0.18em] text-white/48">Speed</dt>
+              <dd class="mt-2 text-2xl font-black">Minutes</dd>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/8 p-4 backdrop-blur">
+              <dt class="text-xs font-black uppercase tracking-[0.18em] text-white/48">Output</dt>
+              <dd class="mt-2 text-2xl font-black">Job pack</dd>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/8 p-4 backdrop-blur">
+              <dt class="text-xs font-black uppercase tracking-[0.18em] text-white/48">Focus</dt>
+              <dd class="mt-2 text-2xl font-black">Fairness</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="reveal relative" aria-label="VacancyIQ interface preview">
+          <div class="absolute -inset-4 rounded-5xl bg-gradient-to-br from-oleeo-coral/35 via-oleeo-violet/20 to-oleeo-sky/25 blur-3xl"></div>
+          <div class="relative overflow-hidden rounded-5xl border border-white/12 bg-white/10 p-3 shadow-2xl backdrop-blur-xl">
+            <div class="rounded-[2rem] bg-white p-4 text-oleeo-ink shadow-soft">
+              <div class="flex items-center justify-between gap-4 border-b border-oleeo-line pb-4">
+                <div class="flex items-center gap-3">
+                  <img class="h-11 w-11 rounded-full" src="assets/oleeo-logo.png" alt="" />
+                  <div>
+                    <p class="text-sm font-black text-oleeo-ink">Oleeo VacancyIQ</p>
+                    <p class="text-xs font-bold text-slate-500">Content creation assistant</p>
+                  </div>
+                </div>
+                <span class="rounded-full bg-oleeo-mint px-3 py-1 text-xs font-black text-emerald-700">Ready to refine</span>
+              </div>
+
+              <div class="mt-5 rounded-[1.5rem] bg-oleeo-blush p-5">
+                <p class="text-xs font-black uppercase tracking-[0.22em] text-oleeo-coral">Role brief</p>
+                <h2 class="mt-2 text-3xl font-black tracking-tight text-oleeo-ink">Senior Data Analyst</h2>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Hybrid role · public sector · technical assessment · inclusive job advert</p>
+              </div>
+
+              <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                <article class="rounded-3xl border border-oleeo-line bg-white p-5 shadow-sm">
+                  <div class="mb-4 h-2 w-16 rounded-full bg-gradient-to-r from-oleeo-coral to-oleeo-flame"></div>
+                  <h3 class="text-base font-black">Job advert</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Candidate-friendly copy with clear requirements and benefits.</p>
+                </article>
+                <article class="rounded-3xl border border-oleeo-line bg-white p-5 shadow-sm">
+                  <div class="mb-4 h-2 w-16 rounded-full bg-oleeo-violet"></div>
+                  <h3 class="text-base font-black">Person specification</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Structured criteria aligned to the role level.</p>
+                </article>
+                <article class="rounded-3xl border border-oleeo-line bg-white p-5 shadow-sm">
+                  <div class="mb-4 h-2 w-16 rounded-full bg-oleeo-sky"></div>
+                  <h3 class="text-base font-black">Bias-aware language</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Clearer wording designed to widen attraction.</p>
+                </article>
+                <article class="rounded-3xl border border-oleeo-line bg-white p-5 shadow-sm">
+                  <div class="mb-4 h-2 w-16 rounded-full bg-oleeo-ink"></div>
+                  <h3 class="text-base font-black">Interview questions</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Evidence-led prompts for structured selection.</p>
+                </article>
+              </div>
+
+              <div class="mt-4 rounded-3xl bg-oleeo-ink p-5 text-white">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-black">Brand tone alignment</p>
+                  <p class="text-sm font-black text-oleeo-sky">92%</p>
+                </div>
+                <div class="mt-3 h-2 rounded-full bg-white/12">
+                  <div class="h-2 w-[92%] rounded-full bg-gradient-to-r from-oleeo-coral to-oleeo-sky"></div>
+                </div>
+                <p class="mt-3 text-xs leading-5 text-white/62">Generated content is grounded in your approved vacancy examples and role context.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-10 -mt-10 px-5 lg:px-8">
+      <div class="mx-auto max-w-7xl rounded-5xl border border-oleeo-line bg-white p-6 shadow-soft lg:p-8">
+        <p class="text-center text-sm font-black uppercase tracking-[0.22em] text-slate-500">Trusted recruitment technology for complex hiring</p>
+        <div class="mt-6 grid grid-cols-2 gap-3 text-center text-sm font-black text-oleeo-ink sm:grid-cols-3 lg:grid-cols-6">
+          <div class="rounded-3xl bg-oleeo-mist p-4">Public Sector</div>
+          <div class="rounded-3xl bg-oleeo-mist p-4">Finance</div>
+          <div class="rounded-3xl bg-oleeo-mist p-4">NHS</div>
+          <div class="rounded-3xl bg-oleeo-mist p-4">Police</div>
+          <div class="rounded-3xl bg-oleeo-mist p-4">Campus</div>
+          <div class="rounded-3xl bg-oleeo-mist p-4">RPO</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
+          <div class="reveal">
+            <p class="eyebrow">Why VacancyIQ</p>
+            <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] text-oleeo-ink sm:text-5xl">Your vacancy content, without the blank-page bottleneck.</h2>
+          </div>
+          <p class="reveal text-lg leading-8 text-slate-600">Hiring teams often lose time rewriting job descriptions, correcting inconsistent manager drafts and trying to make adverts clearer, fairer and more attractive. VacancyIQ gives them a guided starting point that is fast, structured and aligned to your organisation.</p>
+        </div>
+
+        <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="feature-card reveal">
+            <span class="feature-icon bg-oleeo-rose text-oleeo-coral">01</span>
+            <h3>On-brand by design</h3>
+            <p>Generate vacancy content that reflects your tone of voice, terminology and approved role language.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon bg-indigo-50 text-oleeo-violet">02</span>
+            <h3>Bias-aware content</h3>
+            <p>Support fairer attraction with clearer language, more inclusive benefits and less exclusionary wording.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon bg-sky-50 text-sky-600">03</span>
+            <h3>Better job packs</h3>
+            <p>Create adverts, job descriptions, person specifications and assessment prompts from one workflow.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon bg-emerald-50 text-emerald-700">04</span>
+            <h3>Recruiter efficiency</h3>
+            <p>Reduce rework and speed up the path from hiring request to publish-ready vacancy content.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="relative overflow-hidden bg-oleeo-mist py-24">
+      <div class="bubble bubble-four"></div>
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <p class="eyebrow">How it works</p>
+          <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] text-oleeo-ink sm:text-5xl">From past successful vacancies to future-ready content.</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">VacancyIQ can be configured around your vacancy data, role types and writing standards, then used by teams to create polished content quickly.</p>
+        </div>
+
+        <div class="mt-16 grid gap-5 lg:grid-cols-4">
+          <article class="step-card reveal">
+            <span>1</span>
+            <h3>Configure</h3>
+            <p>Connect the tool to approved role templates, historic vacancy examples and brand guidance.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>2</span>
+            <h3>Ground</h3>
+            <p>Use relevant examples and role context so outputs stay specific, accurate and useful.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>3</span>
+            <h3>Generate</h3>
+            <p>Produce adverts, job descriptions, criteria, benefits copy and assessment questions.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>4</span>
+            <h3>Review</h3>
+            <p>Recruiters and hiring managers refine, approve and publish through your normal hiring process.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="outcomes" class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+          <div class="reveal rounded-5xl bg-oleeo-ink p-7 text-white shadow-soft lg:p-10">
+            <p class="eyebrow-light">In focus</p>
+            <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] sm:text-5xl">Stop turning every new vacancy into a writing project.</h2>
+            <p class="mt-6 text-lg leading-8 text-white/70">Give teams a better first draft: one that is structured, candidate-centred and easy to review.</p>
+            <div class="mt-8 grid gap-3 sm:grid-cols-2">
+              <div class="rounded-3xl bg-white/8 p-5">
+                <p class="text-3xl font-black">Faster</p>
+                <p class="mt-2 text-sm leading-6 text-white/62">Role content creation and review cycles.</p>
+              </div>
+              <div class="rounded-3xl bg-white/8 p-5">
+                <p class="text-3xl font-black">Fairer</p>
+                <p class="mt-2 text-sm leading-6 text-white/62">Language checks and inclusive attraction prompts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <article class="outcome-card reveal">
+              <h3>Protect employer brand</h3>
+              <p>Help every vacancy sound like it comes from the same organisation, even when many hiring managers are involved.</p>
+            </article>
+            <article class="outcome-card reveal">
+              <h3>Improve candidate clarity</h3>
+              <p>Make requirements, responsibilities, benefits and assessment expectations easier to understand.</p>
+            </article>
+            <article class="outcome-card reveal">
+              <h3>Control quality at scale</h3>
+              <p>Reduce inconsistent drafts and support review with structured, repeatable outputs.</p>
+            </article>
+            <article class="outcome-card reveal">
+              <h3>Optimise attraction spend</h3>
+              <p>Publish stronger adverts that better explain the role and speak to the people you want to reach.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="bg-oleeo-blush py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-center">
+          <div class="reveal">
+            <p class="eyebrow">Customer proof</p>
+            <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] text-oleeo-ink sm:text-5xl">Built for the messy reality of decentralised hiring.</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">VacancyIQ is especially useful where job advert quality depends on many managers, departments or locations — and where employer brand needs to stay consistent.</p>
+          </div>
+
+          <div class="reveal rounded-5xl border border-white bg-white p-7 shadow-soft lg:p-10">
+            <div class="mb-6 flex items-center gap-4">
+              <img class="h-14 w-14 rounded-full" src="assets/oleeo-logo.png" alt="" />
+              <div>
+                <p class="text-sm font-black uppercase tracking-[0.22em] text-oleeo-coral">Case study</p>
+                <h3 class="text-2xl font-black text-oleeo-ink">Oleeo</h3>
+              </div>
+            </div>
+            <p class="text-xl font-extrabold leading-8 text-oleeo-ink">From inconsistent job adverts to a more controlled, brand-aligned vacancy creation process.</p>
+            <p class="mt-5 leading-7 text-slate-600">VacancyIQ helps teams bring employer brand, tone of voice and quality control into the vacancy drafting process, reducing the risk of every hiring manager producing a different version of the truth.</p>
+            <a data-demo-link href="#" class="mt-7 inline-flex rounded-full bg-oleeo-ink px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-oleeo-coral">See how it works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="relative overflow-hidden bg-oleeo-night py-24 text-white">
+      <div class="hero-mesh absolute inset-0 opacity-70"></div>
+      <div class="relative mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1fr_.9fr] lg:items-center">
+          <div class="reveal">
+            <p class="eyebrow-light">Watch demo now</p>
+            <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] sm:text-5xl">See VacancyIQ create a smarter vacancy pack.</h2>
+            <p class="mt-5 max-w-2xl text-lg leading-8 text-white/70">Use this trial landing page to route prospects to a demo, chatbot, booking page or internal proof-of-concept environment.</p>
+          </div>
+          <div class="reveal rounded-5xl border border-white/10 bg-white/8 p-6 backdrop-blur">
+            <div class="rounded-[2rem] bg-white p-5 text-oleeo-ink">
+              <p class="text-sm font-black uppercase tracking-[0.22em] text-oleeo-coral">Demo journey</p>
+              <ul class="mt-5 space-y-3 text-sm font-bold text-slate-700">
+                <li class="flex gap-3"><span class="check">✓</span> Choose a role and hiring context</li>
+                <li class="flex gap-3"><span class="check">✓</span> Generate candidate-facing copy</li>
+                <li class="flex gap-3"><span class="check">✓</span> Review criteria and questions</li>
+                <li class="flex gap-3"><span class="check">✓</span> Refine for tone, inclusivity and clarity</li>
+              </ul>
+              <a data-demo-link href="#" class="mt-7 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-oleeo-coral to-oleeo-flame px-6 py-4 text-base font-black text-white shadow-lift transition hover:-translate-y-0.5">Launch demo link</a>
+              <p class="mt-4 text-center text-xs leading-5 text-slate-500">Update the demo URL once the live VacancyIQ chatbot or booking page is ready.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-white py-24">
+      <div class="mx-auto max-w-4xl px-5 lg:px-8">
+        <div class="reveal text-center">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] text-oleeo-ink sm:text-5xl">Common VacancyIQ questions.</h2>
+        </div>
+
+        <div class="mt-12 space-y-4">
+          <article class="faq-item reveal rounded-4xl border border-oleeo-line bg-white shadow-sm">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Is VacancyIQ just a generic AI writing tool?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-panel"><p>No. The value is in applying recruitment-specific structure, your organisation’s vacancy examples and Oleeo’s hiring expertise, rather than asking a generic model to write from scratch.</p></div>
+          </article>
+
+          <article class="faq-item reveal rounded-4xl border border-oleeo-line bg-white shadow-sm">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>What content can it create?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-panel"><p>Typical outputs include job adverts, job descriptions, person specifications, benefits copy, role criteria and interview or assessment questions.</p></div>
+          </article>
+
+          <article class="faq-item reveal rounded-4xl border border-oleeo-line bg-white shadow-sm">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Does it replace recruiter review?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-panel"><p>No. VacancyIQ creates a strong first draft and supports consistency, but recruiters and hiring managers should still review, refine and approve content before publication.</p></div>
+          </article>
+
+          <article class="faq-item reveal rounded-4xl border border-oleeo-line bg-white shadow-sm">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>Can the trial run without ATS integration?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-panel"><p>Yes. This landing page is designed to support a lightweight trial or demo flow. It can link to a standalone chatbot, a booking page or a guided demo environment.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white px-5 pb-24 lg:px-8">
+      <div class="mx-auto max-w-7xl overflow-hidden rounded-5xl bg-gradient-to-r from-oleeo-coral to-oleeo-flame p-1 shadow-lift">
+        <div class="rounded-[2.55rem] bg-oleeo-night p-8 text-white lg:p-12">
+          <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p class="text-sm font-black uppercase tracking-[0.24em] text-white/50">Ready to transform vacancy content?</p>
+              <h2 class="mt-4 text-4xl font-black tracking-[-0.045em] sm:text-5xl">Give every hiring manager a better first draft.</h2>
+              <p class="mt-5 max-w-2xl text-lg leading-8 text-white/70">Create vacancy content that is easier to review, easier to publish and easier for candidates to understand.</p>
+            </div>
+            <a data-demo-link href="#" class="inline-flex justify-center rounded-full bg-white px-8 py-4 text-base font-black text-oleeo-ink transition hover:-translate-y-0.5 hover:bg-oleeo-rose">Book a demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-oleeo-line bg-white py-10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 text-sm text-slate-500 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <a class="flex items-center gap-3" href="#top" aria-label="Oleeo VacancyIQ home">
+        <img class="h-10 w-10 rounded-full" src="assets/oleeo-logo.png" alt="Oleeo logo" />
+        <div>
+          <p class="font-black text-oleeo-ink">Oleeo VacancyIQ</p>
+          <p class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Vacancy content generator</p>
+        </div>
+      </a>
+      <p>© <span id="year"></span> Oleeo Ltd. Trial landing page.</p>
+      <div class="flex gap-4 font-bold">
+        <a class="hover:text-oleeo-coral" href="https://www.oleeo.com/" target="_blank" rel="noopener">Oleeo.com</a>
+        <a class="hover:text-oleeo-coral" href="https://www.oleeo.com/products/vacancy-content-and-job-description-generator/" target="_blank" rel="noopener">VacancyIQ</a>
+      </div>
+    </div>
+  </footer>
+   <!-- JS for page interactions -->
+  <script src="main.js"></script>
+
+  <!-- DisableInputExtension definition -->
+  <script type="text/javascript">
+    const DisableInputExtension = {
+      name: 'DisableInput',
+      type: 'effect',
+      match: ({ trace }) =>
+        trace.type === 'ext_disableInput' ||
+        trace.payload?.name === 'ext_disableInput',
+      effect: ({ trace }) => {
+        const { isDisabled } = trace.payload;
+
+        function disableInput() {
+          // Find all elements that have a shadowRoot
+          const hosts = [...document.querySelectorAll('*')].filter(
+            (el) => el.shadowRoot
+          );
+
+          let textarea = null;
+          let sendBtn = null;
+          let root = null;
+
+          // Search through each shadow root to find the textarea
+          for (const host of hosts) {
+            root = host.shadowRoot;
+            textarea = root.querySelector('textarea.vfrc-chat-input');
+            if (textarea) {
+              sendBtn = root.querySelector('#vfrc-send-message');
+              break;
+            }
+          }
+
+          if (!textarea) {
+            console.error('DisableInputExtension: Voiceflow textarea not found');
+            return;
+          }
+
+          if (!root) {
+            console.error('DisableInputExtension: Shadow root not found');
+            return;
+          }
+
+          // Add or update style tag for visual disabled state
+          let styleTag = root.querySelector('#vf-disable-input-style');
+          if (!styleTag) {
+            styleTag = document.createElement('style');
+            styleTag.id = 'vf-disable-input-style';
+            root.appendChild(styleTag);
+          }
+
+          // Store original value descriptor
+          const originalValueDescriptor = Object.getOwnPropertyDescriptor(
+            HTMLTextAreaElement.prototype,
+            'value'
+          );
+
+          function updateInputState() {
+            if (isDisabled) {
+              // Disable: apply visual styles and logical disable
+              styleTag.textContent = `
+                textarea.vfrc-chat-input {
+                  pointer-events: none !important;
+                  opacity: 0.4 !important;
+                  cursor: default !important;
+                  caret-color: transparent !important;
+                }
+                #vfrc-send-message {
+                  pointer-events: none !important;
+                  opacity: 0.35 !important;
+                  cursor: default !important;
+                }
+              `;
+
+              // Logical disable
+              textarea.readOnly = true;
+              textarea.disabled = true;
+              if (sendBtn) {
+                sendBtn.disabled = true;
+              }
+
+              // Clear the value and block changes
+              Object.defineProperty(textarea, 'value', {
+                get: function () {
+                  return '';
+                },
+                set: function () {},
+                configurable: true,
+              });
+              textarea.value = '';
+            } else {
+              // Enable: remove visual styles and logical enable
+              styleTag.textContent = '';
+
+              // Logical enable
+              textarea.readOnly = false;
+              textarea.disabled = false;
+              if (sendBtn) {
+                sendBtn.disabled = false;
+              }
+
+              // Restore original value getter/setter
+              Object.defineProperty(textarea, 'value', originalValueDescriptor);
+            }
+
+            // Trigger events to update component state
+            textarea.dispatchEvent(
+              new Event('input', { bubbles: true, cancelable: true })
+            );
+            textarea.dispatchEvent(
+              new Event('change', { bubbles: true, cancelable: true })
+            );
+          }
+
+          // Initial update
+          updateInputState();
+        }
+
+        disableInput();
+      },
+    };
+  </script>
+
+  <!-- Voiceflow widget loader with DisableInputExtension wired in -->
+  <script type="text/javascript">
+    (function (d, t) {
+      var v = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      v.onload = function () {
+        window.voiceflow.chat
+          .load({
+            verify: { projectID: '6a3a9199ff3b0cfa9edb1149' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: 'https://runtime-api.voiceflow.com',
+            },
+            assistant: {
+              // Attach the DisableInput extension here
+              extensions: [DisableInputExtension],
+            },
+          })
+          .then(() => {
+            window.voiceflow.chat.proactive.clear();
+            window.voiceflow.chat.proactive.push(
+              {
+                type: 'text',
+                payload: {
+                  message:
+                    "Hi there 👋 I’m VacancyIQ, Oleeo’s AI recruitment assistant.",
+                },
+              },
+              {
+                type: 'text',
+                payload: {
+                  message:
+                    "Use the buttons or ask me for help creating adverts, descriptions, behaviours and interview questions for your job roles.",
+                },
+              }
+            );
+          });
+      };
+      v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
+      v.type = 'text/javascript';
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+
+
+  <!-- JS -->
+  <script src="main.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
