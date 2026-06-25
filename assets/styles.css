@@ -1,0 +1,102 @@
+:root {
+  --oleeo-navy: #08133f;
+  --oleeo-blue: #3e63f4;
+  --oleeo-sky: #47d7ff;
+  --oleeo-pink: #ff3d6e;
+  --oleeo-lilac: #ebe8ff;
+  --oleeo-ink: #111827;
+}
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 16px;
+  z-index: 100;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: white;
+  color: var(--oleeo-navy);
+  box-shadow: 0 12px 40px rgba(8, 19, 63, .2);
+}
+.skip-link:focus { left: 16px; }
+
+.hero-grid {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(71, 215, 255, .22), transparent 28rem),
+    radial-gradient(circle at 80% 0%, rgba(255, 61, 110, .20), transparent 30rem),
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+}
+
+.glass-panel {
+  background: linear-gradient(145deg, rgba(255, 255, 255, .92), rgba(255, 255, 255, .74));
+  box-shadow: 0 24px 80px rgba(8, 19, 63, .16);
+  backdrop-filter: blur(18px);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: .78;
+  pointer-events: none;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--oleeo-blue), #7c5cff 45%, var(--oleeo-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  position: relative;
+}
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(71, 215, 255, .9), rgba(255, 61, 110, .86));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+.card-hover {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 64px rgba(8, 19, 63, .14);
+}
+
+.flow-line {
+  background: linear-gradient(180deg, rgba(62,99,244,.2), rgba(255,61,110,.18));
+}
+
+.preview-window {
+  box-shadow: 0 24px 85px rgba(8, 19, 63, .28);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card-hover, .reveal { transition: none; }
+  .reveal { opacity: 1; transform: none; }
+}
